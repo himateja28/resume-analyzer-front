@@ -18,7 +18,7 @@ export default function App() {
     fd.append("jd", jd);
 
     try {
-      const res = await fetch("http://localhost:4000/api/analyze", {
+      const res = await fetch("https://resume-analyzer-rosy.vercel.app/api/analyze", {
         method: "POST",
         body: fd,
       });
